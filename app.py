@@ -8,7 +8,7 @@ from flask import Flask, request, jsonify, render_template
 import numpy as np
 
 # Step 1: Load and prepare the dataset
-data = pd.read_csv("C:\\Users\\DELL\\OneDrive\\Desktop\\ML CBP\\archive (1)\\diabetes.csv")
+data = pd.read_csv("diabetes.csv")
 X = data.drop('Outcome', axis=1)
 y = data['Outcome']
 
